@@ -7,7 +7,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["localhost", "cdn.sanity.io","i.gifer.com"],
+    domains: ["localhost", "cdn.sanity.io", "i.gifer.com", "risingmax.com"],
   },
   trailingSlash: true,
 };
