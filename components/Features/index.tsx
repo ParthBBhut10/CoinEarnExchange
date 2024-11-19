@@ -54,17 +54,29 @@ const Feature = () => {
           </div>
 
           {/* New Image (Added at the end) with Floating Animation and Glow Effect */}
-          <div className="mt-12 relative z-10">
-            <div className="w-full flex justify-center">
+          <div className="mt-12 relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+            {/* Left Section: Paragraph */}
+            <div className="flex-1 text-center md:text-left text-white">
+              <h2 className="text-2xl md:text-4xl font-bold mb-4">AI Technology Token</h2>
+              <p className="text-lg md:text-xl">
+                By integrating with the Solana blockchain, our AI-driven token ecosystem leverages the high-speed, low-cost infrastructure Solana offers. AI Technology Token's smart contract suite empowers users to seamlessly participate in cutting-edge AI modules built on Solana. This includes AI-powered prediction markets, decentralized data analysis, neural network-based automation, AI-enhanced DeFi protocols, machine learning-driven oracle networks, and secure multi-party computation frameworks.
+              </p>
+            </div>
+
+            {/* Right Section: Image */}
+            <div className="flex-1 flex justify-center">
               <Image
-                src="/images/shape/comptrade.gif" // Change this to your new image path
-                alt="New Image"
-                width={500}
-                height={300}
-                className="w-full h-auto md:w-1/2 lg:w-2/3 xl:w-1/3 animate-float glow-effect"
+                src="https://risingmax.com/assets/img/solna-two.png"
+                alt="Descriptive Image"
+                width={1000}
+                height={750}
+                className="w-full h-auto md:w-2/3 lg:w-1/2 xl:w-1/3 object-cover"
               />
             </div>
           </div>
+
+
+
 
         </div>
 
