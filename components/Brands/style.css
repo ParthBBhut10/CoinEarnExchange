@@ -1,16 +1,46 @@
 .bg-alabaster {
-    background-color: #fafafa; /* Light background */
+  background-color: #fafafa;
+  /* Light background */
+}
+
+.bg-black {
+  background-color: #ffffff;
+  /* Dark background */
+}
+
+.bg-alabaster,
+.bg-black {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h4 {
+  transition: color 0.3s ease;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
   }
-  
-  .bg-black {
-    background-color: #ffffff; /* Dark background */
+
+  to {
+    transform: translateX(-100%);
   }
-  
-  .bg-alabaster, .bg-black {
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  h4 {
-    transition: color 0.3s ease;
-  }
-  
+}
+
+.overflow-hidden {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.animate-scroll {
+  display: flex;
+  animation: scroll 20s linear infinite;
+  width: fit-content;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+  width: 200px;
+  /* Adjust as per the brand logo width */
+}
