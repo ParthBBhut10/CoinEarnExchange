@@ -1,7 +1,7 @@
 /* Hero Background with WebP and Fallback */
 /* Background Styles for Hero */
 .hero-background {
-/*   background-image: url(''); */
+
   /* WebP image */
   background-size: cover;
   background-position: center;
