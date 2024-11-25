@@ -4,6 +4,7 @@ import featuresData from "./featuresData";
 import SingleFeature from "./SingleFeature";
 import SectionHeader from "../Common/SectionHeader";
 import Image from "next/image";
+import { LinearGradient } from 'react-text-gradients';
 
 const Feature = () => {
   return (
@@ -57,7 +58,11 @@ const Feature = () => {
           <div className="mt-12 relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
             {/* Left Section: Paragraph */}
             <div className="flex-1 text-center md:text-left text-white">
-              <h2 className="text-2xl md:text-4xl font-bold mb-4">AI Technology Token</h2>
+             <h1>
+                <LinearGradient gradient={['to left', '#17acff ,#ff68f0']}>
+                  AI Technology Token
+                </LinearGradient>
+              </h1>
               <p className="text-lg md:text-xl">
                 By integrating with the Solana blockchain, our AI-driven token ecosystem leverages the high-speed, low-cost infrastructure Solana offers. AI Technology Token's smart contract suite empowers users to seamlessly participate in cutting-edge AI modules built on Solana. This includes AI-powered prediction markets, decentralized data analysis, neural network-based automation, AI-enhanced DeFi protocols, machine learning-driven oracle networks, and secure multi-party computation frameworks.
               </p>
