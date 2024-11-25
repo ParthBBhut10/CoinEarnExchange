@@ -20,15 +20,25 @@ const Brands = () => {
         onClick={handleToggleColor} // Toggle color on section click
       >
         <div className="mx-auto max-w-c-1700 px-4 md:px-8 2xl:px-0 text-center text-black dark:text-white">
-          <h4 className="mb-5 text-xl font-bold text-black dark:text-white xl:text-4xl 2xl:text-5xl">
+          <h1
+            style={{
+              fontSize: "48px",
+              fontWeight: "bold",
+              backgroundImage: "linear-gradient(to left, #1F51FF, #B026FF, #FF6FFF, #FFFF33)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              display: "inline-block",
+              padding: "20px 0", // Adjusted padding for spacing
+            }}
+          >
             Potential Partners
-          </h4>
+          </h1>
 
           <div className="overflow-hidden relative">
             {/* Animated scrolling container */}
             <div className="flex w-full animate-scroll">
               {/* Repeat brand data multiple times for a seamless loop */}
-              {Array(5)
+              {Array(20)
                 .fill(brandData)
                 .flat()
                 .map((brand, key) => (
@@ -53,7 +63,7 @@ const Brands = () => {
 
         .animate-scroll {
           display: flex;
-          animation: scroll 30s linear infinite;
+          animation: scroll 20s linear infinite;
           will-change: transform;
         }
       `}</style>
