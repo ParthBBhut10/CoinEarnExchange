@@ -28,7 +28,8 @@ const Feature = () => {
           <SectionHeader
             headerInfo={{
               title: "SOLID FEATURES",
-              subtitle: <span className="gradient-subtitle">Core Features of Coin Earn Exchange</span>,
+              subtitle: "Core Features of Coin Earn Exchange",
+
               description: `Including robust security measures for safe trading, instant transaction capabilities for seamless user experiences, and a user-friendly interface designed for both beginners and experienced traders alike.`,
             }}
           />
