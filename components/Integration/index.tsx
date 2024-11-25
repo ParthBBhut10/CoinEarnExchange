@@ -19,7 +19,19 @@ const Integration = () => {
         <SectionHeader
           headerInfo={{
             title: `INTEGRATIONS`,
-            subtitle: `Follow Us`,
+            subtitle: (
+              <span
+                style={{
+                  background: "linear-gradient(to left, #1F51FF, #B026FF, #FF6FFF, #FFFF33)",
+                  WebkitBackgroundClip: "text",
+                  color: "transparent",
+                  fontWeight: "bold",
+                  fontSize: "48px",
+                }}
+              >
+                Follow Us
+              </span>
+            ),
             description: `Stay updated with the latest news and updates from Coin Earn Exchange by following us on social media. Join our community and be part of the conversation!`,
           }}
         />
