@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 import { useState } from "react";
 import Image from "next/image";
 import Particles from "react-tsparticles"; // Import Particles from react-tsparticles
@@ -31,7 +31,7 @@ const Hero = () => {
     return Array.from({ length: 10 }).map((_, index) => {
       let coinSrc = coins[Math.floor(Math.random() * coins.length)];
 
-      let left: number = 0; 
+      let left: number = 0;
       let top: number = 0;
 
       // Ensure coins don't overlap each other
@@ -169,10 +169,11 @@ const Hero = () => {
           <div className="md:w-1/2 flex flex-col items-center text-center">
             <h1 className="mb-5 text-3xl font-bold text-black dark:text-white xl:text-hero">
               Empowering Trading Journey with AI by{" "}
-              <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark">
+              <span className="gradient-text">
                 Coin Earn Exchange
               </span>
             </h1>
+
             <p>
               Offers a decentralized platform where AI algorithms trade on your behalf. Experience the future of trading with our advanced predictive models and staking opportunities.
             </p>
